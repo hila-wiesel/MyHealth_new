@@ -34,12 +34,12 @@ public class Register extends AppCompatActivity {
     }
 
     public void onClickNext(View view) {
-        EditText txtEmail = (EditText) findViewById(R.id.et_Email_CreateClient);
-        EditText txtPass1 = (EditText) findViewById(R.id.et_Pass_CreateClient);
-        EditText txtPass2 = (EditText) findViewById(R.id.et_Pass2_CreateClient);
-        String email = txtEmail.getText().toString().trim();
-        String pass1 = txtPass1.getText().toString().trim();
-        String pass2 = txtPass2.getText().toString().trim();
+        EditText etEmail = (EditText) findViewById(R.id.et_Email_CreateClient);
+        EditText etPass1 = (EditText) findViewById(R.id.et_Pass_CreateClient);
+        EditText etPass2 = (EditText) findViewById(R.id.et_Pass2_CreateClient);
+        String email = etEmail.getText().toString().trim();
+        String pass1 = etPass1.getText().toString().trim();
+        String pass2 = etPass2.getText().toString().trim();
 
 
         if (!pass1.equals(pass2)) {
@@ -49,20 +49,20 @@ public class Register extends AppCompatActivity {
 
         //valid email check
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            txtEmail.setError("valid email is required!");
-            txtEmail.requestFocus();
+            etEmail.setError("invalid email address");
+            etEmail.requestFocus();
             return;
         }
         //empty email check
         if (email.isEmpty()) {
-            txtEmail.setError("email is required!");
-            txtEmail.requestFocus();
+            etEmail.setError("email is required!");
+            etEmail.requestFocus();
             return;
         }
         //valid password check
         if (pass1.isEmpty() || pass1.length() < 6) {
-            txtPass1.setError("min password should be 6 characters");
-            txtPass1.requestFocus();
+            etPass1.setError("min password should be 6 characters");
+            etPass1.requestFocus();
             return;
         }
 

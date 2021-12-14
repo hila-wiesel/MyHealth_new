@@ -40,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onClickForgotPass(View view) {
-//        Intent intent = new Intent(MainActivity.this, ForgotPassword.class);
-//        Bundle b = new Bundle();
-//        b.putInt("key", 1);
-//        startActivity(intent);
-//        finish();   ///
+        Intent intent = new Intent(MainActivity.this, ForgotPassword.class);
+        Bundle b = new Bundle();
+        b.putInt("key", 1);
+        startActivity(intent);
+        finish();
     }
 
 }
