@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/97252/AndroidStudioProjects/MyHealthnew/app/src/main/res/layout/activity_client_register2.xml" value="0.4" />
+        <entry key="..\:/Users/97252/AndroidStudioProjects/MyHealthnew/app/src/main/res/layout/activity_client_register22.xml" value="0.152" />
         <entry key="..\:/Users/97252/AndroidStudioProjects/MyHealthnew/app/src/main/res/layout/activity_client_regiter1.xml" value="0.264" />
         <entry key="..\:/Users/97252/AndroidStudioProjects/MyHealthnew/app/src/main/res/layout/activity_client_regiter2.xml" value="0.264" />
+        <entry key="..\:/Users/97252/AndroidStudioProjects/MyHealthnew/app/src/main/res/layout/activity_create_client1.xml" value="0.2" />
+        <entry key="..\:/Users/97252/AndroidStudioProjects/MyHealthnew/app/src/main/res/layout/activity_create_client2.xml" value="0.264" />
         <entry key="..\:/Users/97252/AndroidStudioProjects/MyHealthnew/app/src/main/res/layout/activity_forgot_password.xml" value="0.264" />
+        <entry key="..\:/Users/97252/AndroidStudioProjects/MyHealthnew/app/src/main/res/layout/activity_home_page.xml" value="0.152" />
         <entry key="..\:/Users/97252/AndroidStudioProjects/MyHealthnew/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/97252/AndroidStudioProjects/MyHealthnew/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/Users/97252/AndroidStudioProjects/MyHealthnew/app/src/main/res/menu/navigation_menu.xml" value="0.176" />
       </map>
     </option>
   </component>

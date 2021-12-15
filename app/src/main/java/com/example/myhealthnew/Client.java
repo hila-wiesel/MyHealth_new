@@ -1,20 +1,37 @@
 package com.example.myhealthnew;
 
+
+import java.util.ArrayList;
+
 public class Client extends User {
-    private double height;
-    private double weight;
-    private String city;
-    private String country;
-    private int birthYear;
-    private String gender;
-    private int waterReminderFrequency;
-    private int sportReminderFrequency;
-    private int recommendedCaloriesPerDay;
-    private int leftCaloriesPerDay;
+    enum Gender{
+        male,
+        female
+    }
+    public String  name;
+    public double height;
+    public double weight;
+    public String city;
+    public String country;
+    public int birthYear;
+    public String gender;
+    public int phoneNumber;
+    public ArrayList<Integer> waterReminderFrequency;
+    public ArrayList<Integer> sportReminderFrequency;
+    public int recommendedCaloriesPerDay;
+    public int leftCaloriesPerDay;
 
 
-    public Client(String email, String password) {
+    public Client(String email, String password, String name, int height, int weight, String city,
+                  String country, int birthYear,String  gender, int phoneNumber) {
         super(email, password);
-
+        this.name = name;
+        this.height = height;
+        this.weight = weight;
+        this.city = city;
+        this.country = country;
+        this.phoneNumber = phoneNumber;
+        this.birthYear = birthYear;
+        this.gender = gender;
     }
 }
