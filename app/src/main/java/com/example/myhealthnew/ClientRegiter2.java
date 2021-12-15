@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class ClientRegiter2 extends AppCompatActivity {
+public class ClientRegister2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +15,7 @@ public class ClientRegiter2 extends AppCompatActivity {
     }
 
     public void onClickEnd(View view) {
-        Intent intent = new Intent(ClientRegiter2.this, ClientHomePage.class);
+        Intent intent = new Intent(ClientRegister2.this, ClientHomePage.class);
         Bundle b = new Bundle();
         b.putInt("key", 1);
         startActivity(intent);

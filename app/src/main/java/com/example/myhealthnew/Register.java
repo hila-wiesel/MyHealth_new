@@ -22,7 +22,6 @@ public class Register extends AppCompatActivity {
     private FirebaseAuth mAuth;
 //    private DatabaseReference reference;
     String UserID;
-    String admin = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +95,8 @@ public class Register extends AppCompatActivity {
                                             }
                                         });
 
-                            } else {  //Client
+                            }
+                            else {  //Client
                                 User user = new User(email, pass1);
                                 FirebaseDatabase.getInstance().getReference("Clients")
                                         .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user)
@@ -116,19 +116,20 @@ public class Register extends AppCompatActivity {
                                             }
                                         });
                             }
-
-
-                        } else {
+                        }
+                        else {
                             Toast.makeText(Register.this, "register failed", Toast.LENGTH_SHORT).show();
                         }
 
                     }
                 });
-
-
         }
-//        finish();///
     }
+
+    public void onClickBack(View view) {
+        startActivity(new Intent(Register.this, MainActivity.class));
+    }
+
 
     boolean isAdmin(String email){
         String admin_str = "admin";

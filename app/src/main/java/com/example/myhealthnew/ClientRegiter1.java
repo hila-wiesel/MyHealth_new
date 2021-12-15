@@ -92,7 +92,7 @@ public class ClientRegiter1 extends AppCompatActivity {
             return;
         }
 
-        Intent intent = new Intent(ClientRegiter1.this, ClientRegiter2.class);
+        Intent intent = new Intent(ClientRegiter1.this, ClientRegister2.class);
         Bundle b = new Bundle();
         b.putInt("key", 1);
         startActivity(intent);
